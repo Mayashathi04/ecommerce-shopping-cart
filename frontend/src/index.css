@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+header {
+  background: #131921;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cart-badge {
+  background: #f0c14b;
+  color: #111;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+nav button {
+  background: transparent;
+  border: none;
+  color: #ccc;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+nav button:hover, nav button.nav-active {
+  color: #fff;
+  border-bottom: 2px solid #f0c14b;
+}
+
+.container {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.products-grid {
+  flex: 3;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-panel {
+  flex: 1;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  height: fit-content;
+}
+
+.full-width-panel {
+  width: 100%;
+}
+
+button {
+  background: #f0c14b;
+  border: 1px solid #a88734;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+button:hover {
+  background: #ddb347;
+}
